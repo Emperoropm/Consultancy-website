@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rusabade.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/script.js" defer></script>
+</head>
+<style>
+	/*for study section*/
+	body{
+		display:none;
+	}
+		.service-card {
+	   margin-top:-100px;
+	   z-index:1;
+	  height:350px;
+	  border-radius:15px;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      transition:  0.4s ease-in-out;
+	  color:rgb(15, 0, 0);
+	  background-color:darkkhaki;
+
+    }
+	.service-card h5{
+		margin-top:20px;
+		color:rgb(2, 1, 12);
+	}
+
+    .service-card:hover {
+      transform: translateY(-10px);
+	  
+	background-position: center;
+	background-size: cover;
+    }
+    
+	.service-card i{
+		margin-top:2%;
+		font-size:50px;
+		color:rgb(202, 43, 43);
+	}
+	
+	.service-card .card-text{
+		margin-top:15%;
+		font-size:20px;
+		font-family: 'Times New Roman', Times, serif;
+		letter-spacing:1px;
+	}
+	.btn-custom{
+		transition:0.3 ease-in-out;
+	}
+	.btn-custom:hover{
+		text-decoration: none;
+		background-color:rgb(43, 125, 139);
+		color:white;
+	}
+	/*for working visa*/
+	.textbox-1{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/OIP.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-1:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-2{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/nursing.png);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+		
+	}
+	.textbox-2:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-3{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/agriculture.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-3:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-4{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/hotel.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-4:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-5{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/cleaning.jpeg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-5:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-6{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/airport1.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-6:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-7{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/hotel-image.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-7:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-8{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/factory.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-8:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	.textbox-9{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/construction.jpg);
+		background-position: center;
+		background-size: cover;
+        padding:20px;
+		color:white;
+		max-height:200px;
+		min-height: 200px;
+		cursor:pointer;
+		transition:0.3s ease-in-out;
+	}
+	.textbox-9:hover{
+        font-weight: bold;
+		transform:translateY(-5px);
+	}
+	
+	/* for why us */
+	.feature-box {
+  background-color: #293241;
+  margin:20px;
+  border-radius: 8px;
+  justify-content:center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  max-width: 300px; /* Optional: to limit the width of each box */
+  min-width: 350px;
+  min-height:200px;
+  color:white;
+  cursor:pointer;
+}
+.feature-box:hover{
+	transform: translateY(-5px);
+
+}
+
+.feature-box i{
+	color:white;
+	transition:0.3s ;
+}
+.feature-box:hover i{
+	color:rgb(219, 121, 8);
+}
+
+@media (max-width: 768px){
+	
+.textbox-1,.textbox-2,.textbox-3,.textbox-4,.textbox-5,.textbox-6,.textbox-7,.textbox-8,.textbox-9, .service-card{
+	margin:20px;
+}
+
+}
+</style>
+<body>
+<div id="wrapper">
+
+	<!-- Top Navigation Bar -->
+	<div class="top-navbar">
+		<div class="container">
+			<div class="top-nav-left">
+				<span><i class="fa fa-envelope"></i> japanlink2@gmail.com</span>
+				<span><i class="fa fa-clock"></i> Sun - Fri: 7:00 am - 5.00 pm</span>
+				<span><i class="fa fa-map-marker-alt"></i>Bharatpur-10, Chitwan</span>
+			</div>
+			<a href="contact.html" class="top-nav-contact-btn">Contact Us →</a>
+
+		</div>
+	</div>
+
+	<!-- start header -->
+	<header>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img id="header-logo" style="width:80px;height:auto;" src="img/nani2.png" alt="logo"/>
+					</a>
+					
+				</div>
+
+				<!-- Social Icons (right aligned) -->
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li> 
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="courses.html">Our services</a></li>
+                        <li><a href="portfolio.html">Work</a></li>
+                        <li><a href="pricing.html">Study</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<section id="featured">
+	 
+	<!-- Slider -->
+	<div id="main-slider" class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="img/slides/3.jpg" alt="Slide 4" />
+				<div class="slide-content animate-fade">
+					<h2>Study in Japan</h2>
+	
+					<p>Enroll for a Japanese Language & Study in Japan helps students improve their Japanese skills and become global citizens.</p>
+					<a href="about.html" class="slider-btn">About Us</a>
+				</div>
+			</li>
+
+			<li>
+				<img src="img/slides/4.jpg" alt="Slide 3" />
+				<div class="slide-content animate-fade">
+					<h2>Why JapanLink Consultancy?</h2>
+					<p>JapanLink provides comprehensive guidance for students interested in studying in Japan.</p>
+					<a href="courses.html" class="slider-btn">Know More</a>
+				</div>
+			</li>
+
+			<li>
+				<img src="img/slides/7.jpg" alt="Slide 7" />
+				<div class="slide-content animate-fade">
+					<h2>Ideal choice for students who want to study in Japan</h2>
+					<p>We help students improve their language skills and achieve their goals.</p>
+					<a href="#" class="slider-btn">Contact Us</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</section>
+		
+<section class="intro-section">
+	
+					<div class="image-section">
+						<img src="img/works/3.jpg" alt="Stat Image" class="stats-image" />
+					</div>
+			
+					<div class="intro-content">
+						<h1>Welcome to JAPANLINK</h1>
+						<p class="sub-heading">Short Introduction</p>
+						<p>
+							We offer comprehensive support and personalized guidance to students who wish to pursue their studies in Japan, accompanying them throughout the entire process—from choosing the right program and submitting applications to navigating visa procedures and settling into life abroad.
+						</p>
+			
+						<ul class="intro-features">
+							<li class="feature-item">
+								<i>&#10003;</i>Visa Success Rate
+							</li>
+							<li class="feature-item">
+								<i>&#10003;</i> Certified Counselors
+							</li>
+							<li class="feature-item">
+								<i>&#10003;</i> Experienced Teacher
+							</li>
+							<li class="feature-item">
+								<i>&#10003;</i> Visa Expert Team
+							</li>
+						</ul>
+			
+						<a href="#" class="btn-read-more">Read More</a>
+					</div>
+				</section>
+			
+
+
+ 
+<!-- Wrapper with shared background -->
+<section class="featured-services">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="aligncenter">
+					<h1 class="modern-heading">Our Featured Services</h1>
+					<span class="clear spacer_responsive_hide_mobile" style="height:13px; display:block;"></span>
+		
+					<p class="quote-paragraph">
+						We offer comprehensive support and personalized guidance to students who wish to pursue their 
+						studies in Japan, accompanying them throughout the entire process—from choosing the right 
+						program and submitting applications to navigating visa procedures and settling into life abroad.
+					</p>
+		
+					<span class="custom-spacer"></span>
+		
+					<p class="quote-paragraph">
+						Our commitment lies in delivering high-quality services tailored to meet each student's unique 
+						needs and goals. By working closely with students, we gain a clear understanding of their 
+						ambitions, ensuring they receive the best possible support throughout their academic journey.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+
+<!-- Services Grid -->
+	<div class="row skill-home-solid">
+		<div class="box-area" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/studying.jpg);">
+			<h3 style="color:white">Study in Japan</h3>
+			<p style="color:white">
+				Our language classes are designed to help students improve their Japanese 
+				language skills, increase their cultural awareness, and prepare for their 
+				new academic environment.
+
+			</p>
+			<a href="contact.html" class="know-more-btn">Know More <span>&rarr;</span></a>
+		</div>
+
+		<div class="box-area"  style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(img/career.jpg);">
+			<h3 style="color:white">Carrer in Japan</h3>
+			<p style="color:white">
+				Undergradute student We offer comprehensive support and guidance to help our clients navigate 
+				the documentation process and ensure that they have all the necessary 
+				documents to apply for their chosen program.
+
+			</p>
+			<a href="contact.html" class="know-more-btn">Know More <span>&rarr;</span></a>
+		</div>
+	</div>     
+        </div>
+    </div>
+</section>
+<section class="courses">
+	<div class="container">
+<div class="heading">
+	<h1 class="modern-heading">Study</h1>
+</div></div>
+</section>
+
+
+<section class="courses">
+<div class="container">
+<div class="container py-5">
+	<div class="row justify-content-center">
+	  <!-- Consulting Box -->
+	  <div  class="col-lg-3 col-md-6 mb-4">
+		<div class="card service-card text-center">
+		  <div class="card-body">
+			
+			<img style="width:230px;height:200px;margin-top:20px;" src="img/consulting.jpeg" alt="hello">
+			<p  class="card-text">Consulting</p>
+			<a href="contact.html" class="btn btn-link btn-custom">Know More</i></a>
+		  </div>
+		</div>
+	  </div>
+  
+	  <!-- Language Class Box -->
+	  <div class="col-lg-3 col-md-6 mb-4">
+		<div class="card service-card text-center">
+		  <div class="card-body">
+			<img style="width:230px;height:200px;margin-top:20px;" src="img/language-class.jpg" alt="hello">
+			<p class="card-text">Language class</p>
+			<a href="contact.html" class="btn btn-link btn-custom">Know More </a>
+		  </div>
+		</div>
+	  </div>
+  
+	  <!-- Documentation Box -->
+	  <div class="col-lg-3 col-md-6 mb-4">
+		<div class="card service-card text-center">
+		  <div class="card-body">
+			<img style="width:230px;height:200px;margin-top:20px;" src="img/documentation.jpg" alt="hello">
+			<p class="card-text">Documentation</p>
+			<a href="contact.html" class="btn btn-link btn-custom">Know More </a>
+		  </div>
+		</div>
+	  </div>
+  
+	  <!-- Visa Process Box -->
+	  <div class="col-lg-3 col-md-6 mb-4">
+		<div class="card service-card text-center">
+		  <div class="card-body">
+			<img style="width:230px;height:200px;margin-top:20px;" src="img/visa-process.png" alt="hello">
+			<p class="card-text">Visa Process</p>
+			<a href="contact.html" class="btn btn-link btn-custom">Get Started </a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  </div>
+</section>
+<section class="courses">
+<div class="container">
+
+	
+		<h1 class="modern-heading">Working Visa</h1>
+		<div class="aligncenter"><h2 class="aligncenter">SSW Visa</h1><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span></div>
+       <div class="row">
+            <div class="col-md-4">
+			<div class="textbox-1" >
+                <h3 class="visa-content-1" style="color:white;">Food Service</h3>
+				<p class="visa-content">Opportunities in restaurant kitchens and food preparation. Roles include kitchen staff, chefs, and customer service assistants.</p>
+            </div> </div>
+            <div class="col-md-4">
+			<div class="textbox-2">
+                  <h3 class="visa-content-1" style="color:white;">Nursing care</h3>
+				<p class="visa-content">Supporting elderly and disabled individuals by assisting with healthcare, rehabilitation, and daily activities in nursing homes and care facilities.</p>
+            </div> </div>
+			<div class="col-md-4">
+			<div class="textbox-3">
+                  <h3 class="visa-content-1" style="color:white;">Agriculture</h3>
+				<p class="visa-content">Involvement in crop production, livestock management, and greenhouse farming to support Japan's agricultural sector.</p>
+            </div> </div>
+        </div>
+		<div class="row">
+            <div class="col-md-4">
+			<div class="textbox-4">
+                <h3 class="visa-content-1" style="color:white;">Hotel Accomodations</h3>
+				<p class="visa-content">Employment opportunities in housekeeping, guest services, and front desk management, supporting Japans thriving tourism industry.</p>
+            </div> </div>
+            <div class="col-md-4">
+			<div class="textbox-5">
+                  <h3 class="visa-content-1" style="color:white;">Building Cleaning</h3>
+				<p class="visa-content">Maintaining cleanliness and hygiene in public and private spaces, including floor and window cleaning, and waste management.</p>
+            </div> </div>
+			<div class="col-md-4">
+			<div class="textbox-6">
+                  <h3 class="visa-content-1" style="color:white;">Airport ground handling</h3>
+				<p class="visa-content">Managing airport logistics, including baggage handling, freight management, and ground vehicle operations.</p>
+            </div> </div>
+        </div>
+
+		<div class="aligncenter" ><h2 style="justify-content:center;margin-top:70px;">Undergraduate Working Visa
+		</h1><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span></div>
+		
+	
+   <div class="row">
+		<div class="col-md-4">
+		<div class="textbox-7">
+			<h3 class="visa-content-1" style="color:white;">Hotel</h3>
+			<p class="visa-content">Engaging in guest services, event coordination, and hotel operations. Greet guests, check them in and out, handle reservations, answer queries, and resolve guest issues.</p>
+		</div> </div>
+		<div class="col-md-4">
+		<div class="textbox-8">
+			  <h3 class="visa-content-1" style="color:white;">Factory</h3>
+			<p class="visa-content"> Working on manufacturing lines, product assembly, and operational management across various industries.</p>
+		</div> </div>
+		<div class="col-md-4">
+		<div class="textbox-9">
+			  <h3 class="visa-content-1" style="color:white;">Construction</h3>
+			<p class="visa-content">Contributing to infrastructure development through on-site work, including civil engineering, and project management.</p>
+		</div> </div></div></div></section>
+		<section class="why-japanlink text-center py-5" style="background-color: #0a192f; padding:20px;">
+			<div class="container">
+			  <h2 class="text-white mb-4" style="color:white;">Why Us?</h2>
+			  <div class="row" >
+				<div class="col-md-4 mb-4" >
+				  <div class="feature-box p-4 bg-light text-dark rounded" style="padding:10px;">
+					<i style="font-size: 40px;" class="fa-regular fa-lightbulb"></i>
+					<p style="font-size:15px;"><strong style="font-size:20px;">Personalized Guidance</strong><br/> We understand that no two journeys are alike, and we provide tailored support to meet each client’s individual needs and goals.</p>
+				  </div>
+				</div>
+				<div class="col-md-4 mb-4">
+				  <div class="feature-box p-4 bg-light text-dark rounded" style="padding:10px;">
+					<i  style="font-size: 40px;" class="fa-solid fa-handshake"></i>
+					<p style="font-size:15px;"><strong style="font-size:20px;">Comprehensive Support</strong><br/> From visa applications and admissions to accommodation and cultural orientation, we are with you every step of the way.</p>
+					
+				  </div>
+				</div>
+				<div class="col-md-4 mb-4">
+				  <div class="feature-box p-4 bg-light text-dark rounded" style="padding:10px;">
+					<i style="font-size: 40px;" class="fa-solid fa-users-gear"></i>
+					<p style="font-size:15px;"><strong style="font-size:20px;">Industry Connections</strong><br/> Our partnerships with universities and employers provide access to the best academic and career opportunities in Japan.
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-4 mb-4">
+				  <div class="feature-box p-4 bg-light text-dark rounded" style="padding:10px;">
+					<i style="font-size: 40px;" class="fa-solid fa-graduation-cap"></i>
+					<p style="font-size:15px;"><strong style="font-size:20px;">Flexible Learning Options</strong><br/> We offer both in-person and online language courses, accommodating diverse schedules and learning preferences.
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-4 mb-4">
+				  <div class="feature-box p-4 bg-light text-dark rounded" style="padding:10px;">
+					<i  style="font-size: 40px;" class="fa-solid fa-headset"></i>
+					<p style="font-size:15px;"><strong style="font-size:20px;">Ongoing Support</strong><br/> Our commitment to our clients extends beyond placement. We provide continuous assistance to ensure a smooth transition and long-term success in Japan.
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-4 mb-4">
+				  <div class="feature-box p-4 bg-light text-dark rounded" style="padding:10px;">
+					<i  style="font-size: 40px;" class="fa-solid fa-book"></i>
+					<p style="font-size:15px;"><strong style="font-size:20px;">Pre-departure Briefing</strong> <br/>If you are visiting in Japan very first time, then our pre-departure briefing will be much helpful.</p>
+		
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+	
+
+	</div>
+</section>
+
+
+	
+
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<strong><b class="text-danger">Japan</b> Link<br/></strong>
+					<address>
+					<strong>Consultancy Pvt.Ltd.</strong><br>
+					Welcome to Japan Link <br>
+					 Consultancy Pvt.Ltd. and Thank you<br/>
+					for your interest<br/></address>
+					<p>
+						<i class="icon-phone"></i>+8 18037764436<br>
+						<i class="icon-envelope-alt"></i> japanlink2@gmail.com
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Quick Links</h5>
+					<ul class="link-list">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="courses.html">Our Services</a></li>
+						<li><a href="pricing.html">Study</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Branch office</h5>
+					<ul class="link-list">
+						<li>
+							<i class="fa-solid fa-house"></i> Bharatpur-10, Chitwan<br/>
+						    
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Corporate Ofice</h5>
+					<ul class="link-list">
+						<i class="fa-solid fa-house"></i> Bharatpur-10, Chitwan<br/>
+						<i class="fa-solid fa-phone"></i> 056-596903, 9816407112<br/>
+						<i class="fa-solid fa-envelope"></i> japanlink2@gmail.com
+					</ul>
+				</div><div class="icons" style="letter-spacing: 3px;">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Above Site All right reserved.</span><a href="http://webthemez.com" target="_blank"></a>
+						</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/portfolio/jquery.quicksand.js"></script>
+<script src="js/portfolio/setting.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="https://kit.fontawesome.com/d4bd359809.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	
+
+</body>
+</html>
